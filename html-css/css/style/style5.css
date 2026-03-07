@@ -1,0 +1,267 @@
+body {
+    width: 360px;
+    margin: 100px auto;
+}
+.card {
+    box-shadow:  0px 3px 10px black;
+}
+.card__img {
+    width: 100%;
+    margin: auto;
+}
+.card__img img {
+    width: 100%;
+}
+.card__content {
+    padding: 15px 25px;
+}
+.card__content-ttl {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.card__content-cat {
+    padding: 5px 10px;
+    background: #008888;
+    margin-bottom: 15px;
+    display: inline-block;
+    /* 要素の文字数に応じて幅が変更されるためにinline-blockを指定 */
+    color: #fff;
+    font-size: 14px;
+}
+.card__content-tag {
+    font-size: 14px;
+    text-align: right;
+    /* 親要素にtext-alignを適用すると子要素のinline-block要素に適応される */
+}
+.card__content-tag-item {
+    display: inline-block;
+    /* 横並びにするためにinline-blockを指定 */
+    color: #008888;
+}
+.card__content-tag-item--last {
+    display: inline-block;
+    /* 横並びにするためにinline-blockを指定 */
+    margin-left: 20px;
+    color: #888888;
+}
+
+
+/*子要素が左から右に配置*/
+.flex {
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    margin-top: 20px;
+}
+.box {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*子要素が右から左に配置*/
+.flex2 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: yellow;
+    margin-top: 20px;
+}
+.box2 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*flexを再利用*/
+/*子要素が上から下に配置*/
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    margin-bottom: 20px;
+}
+/* flex２を再利用*/
+/*子要素が下から上に配置*/
+.flex2 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.box2 {
+    margin-bottom: 20px;
+}
+/*左揃えで配置*/
+.flex3 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: yellow;
+    margin-top: 20px;
+}
+.box3 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*右揃えで配置*/
+.flex4 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: yellow;
+}
+.box4 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*中央揃えで配置*/
+.flex5 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: yellow;
+}
+.box5 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*最初と最後の子要素を両端に配置し、その間の子要素は均等配置*/
+.flex6 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    background-color: yellow;
+}
+.box6 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*全ての子要素が均等配置*/
+.flex7 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    background-color: yellow;
+}
+.box7 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*親要素の高さ又はコンテンツの一番多い子要素の高さに合わせて広げて配置される*/
+.flex8 {
+    display: flex;
+    margin-top: 20px;
+    align-items: stretch;
+    background-color: yellow;
+    height: 200px;
+}
+.box8 {
+    background-color: red;
+    font-size: 32px;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+/*親要素の開始位置から配置*/
+.flex9 {
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-start;
+    background-color: yellow;
+    height: 200px;
+}
+.box9 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*親要素の終点から配置*/
+.flex10 {
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-end;
+    background-color: yellow;
+    height: 200px;
+}
+.box10 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*justify-content: center;と組み合わせて親要素に対して中心に配置*/
+.flex11 {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    background-color: yellow;
+    height: 200px;
+}
+.box11 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*子要素は折り返さず、１行で表示されます*/
+.flex12 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    background-color: yellow;
+}
+.box12 {
+    background-color: red;
+    margin-right: 20px;
+    font-size: 10px;
+    width: 50px;
+    height: 50px;
+}
+/*親要素の幅を子要素が上回った際に、子要素は折り返され、複数行で表示*/
+.flex13 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: yellow;
+}
+.box13 {
+    background-color: red;
+    margin: 10px 10px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}
+/*子要素は折り返され、複数行だ表示されるが、下から上に折り返される*/
+.flex14 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 20px;
+    background-color: yellow;
+}
+.box14 {
+    background-color: red;
+    margin: 10px 10px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+}

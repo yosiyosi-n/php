@@ -1,0 +1,144 @@
+.flex__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.practice__card {
+    width: 30%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card__img img {
+    width: 100%;
+}
+
+.card__content {
+    padding: 15px 25px;
+}
+
+.card__ttl {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.card__cat {
+    padding: 5px 10px;
+    background: #008888;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
+
+.tag {
+    font-size: 14px;
+    text-align: right;
+}
+
+.card__tag {
+    display: inline-block;
+    color: #008888;
+}
+
+.card__date {
+    display: inline-block;
+    margin-left: 20px;
+    color: #888888;
+}
+
+.relative {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.red-box {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+.relative {
+    margin-top: 20px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.absolute {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.about {
+    background-color: #ebebeb;
+    padding: 60px 0;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about__img img {
+    width: 100%;
+}
+
+.about__img {
+    margin-top: -80px;
+    /* position: relative;
+top: -80px; 使う必要はない*/
+    width: 40%;
+}
+
+.about__content {
+    width: 40%;
+}
+.parents {
+    position: relative;
+}
+
+.first {
+    position: absolute;
+    background-color: #2600FF;
+    z-index: 10;
+}
+
+.second {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: #FDFF00;
+    z-index: 0;
+}
+
+.third {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    background-color: #FF0000;
+    z-index: -10;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    color: #ffffff;
+}
+
+.relative {
+    box-shadow: 0px 1px 6px #000;
+    margin-top: 1px;
+    position: relative;
+}
+
+.relative__img {
+    margin: 0px 0px 0px auto;
+    display: block;
+    width: 50%;
+}
+.absolute__1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 50px;
+}

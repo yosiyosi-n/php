@@ -1,0 +1,103 @@
+p {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        color: blue;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        color: red;
+    }
+}
+
+p {
+    color: black;
+}
+
+@media screen and (min-width: 481px) {
+    p {
+        color: red;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    p {
+        color: blue;
+    }
+}
+
+.item {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.flex__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wrap {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.practice__card {
+    width: 100%;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+.practice__card:last-child {
+    margin-bottom: 0px;
+}
+.card__img img {
+    width: 100%;
+}
+.card__content {
+    padding: 15px 25px;
+}
+.card__ttl {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.card__cat {
+    padding: 5px 10px;
+    background: #008888;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
+.tag {
+    font-size: 14px;
+    text-align: right;
+}
+.card__tag {
+    display: inline-block;
+    color: #008888;
+}
+.card__date {
+    display: inline-block;
+    margin-left: 20px;
+    color: #888888;
+}
+
+/*レスポンシブ (768px以上)*/
+@media screen and (min-width: 768px) {
+    .practice__card {
+        width: 45%;
+    }
+}
+
+/*レスポンシブ (1000px以上)*/
+@media screen and (min-width: 1000px) {
+    .practice__card {
+        width: 30%;
+        margin-bottom: 0;
+    }
+}

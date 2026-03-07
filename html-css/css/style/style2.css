@@ -1,0 +1,104 @@
+* {
+    line-height: 1;
+}
+
+.number__child {
+    padding-left: 40px;
+}
+
+.number__parent:nth-of-type(3n) {
+    color: red;
+}
+.number__child:nth-of-type(n+2) {
+    color: blue;
+}
+.number__child:nth-child(3n-1) {
+    color: blueviolet;
+}
+#blue{
+    color: blue;
+}
+.purple{
+    color: purple;
+}
+p{
+    color: black;
+}
+.text{
+    color: red;
+}
+p {
+    font-family: "Gorditas", serif;
+    font-size: 10px;
+}
+h2 {
+    font-family: "Noto Serif JP", serif;
+}
+* {
+    text-align:left
+}
+* {
+    line-height: 20px;
+}
+p {
+    background-color: greenyellow;
+}
+p {
+    width: 20%;
+    height: 20px;
+    background: linear-gradient(-90deg,red,blue);
+}
+h2 {
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(red,blue);
+}
+h2 {
+    text-align: center;
+}
+h2 {
+    line-height: 100px;
+}
+body {
+    background-image: url("../img/red.jpg");
+    background-size: 300px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+    background: #f2f2f2 url("../img/red.jpg") no-repeat center / 300px 150px;
+}
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.bg {
+    background: url("../img/firstview.jpg") no-repeat bottom / cover;
+/* 高さ指定 */
+    height: 700px;
+}
+
+
+div {
+    background: #FF0000;
+    width: 300px;
+}
+.parrent {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+.child {
+    width: 30%;
+    height: 30%;
+    color: #fff;
+    background-color: blue;
+}
+
+.viewport {
+    width: 50vw;
+    height: 50vh;
+    background-color: yellow;
+}
