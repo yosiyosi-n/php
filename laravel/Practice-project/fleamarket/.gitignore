@@ -1,0 +1,4 @@
+.DS_Store
+laravel/Practice-project/fleamarket/docker/mysql/data/
+laravel/Practice-project/fleamarket/src/node_modules/
+laravel/Practice-project/fleamarket/src/.env
